@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Layout</title>
+  <style>
+
+    /* RESET */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* BARIS 1 - HEADER */
+    .header {
+      background-color: #4a90d9;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* BARIS 2 - NAVBAR */
+    .navbar {
+      background-color: #333333;
+      overflow: hidden;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background-color: #4a90d9;
+    }
+
+    /* BARIS 3 - 4 KOLOM */
+    .row {
+      display: flex;
+      min-height: 300px;
+    }
+
+    /* Kolom 1 - Sidebar Kiri */
+    .col-sidebar-left {
+      width: 20%;
+      background-color: #e0e0e0;
+      padding: 15px;
+    }
+
+    /* Kolom 2 - Konten Utama */
+    .col-main {
+      width: 40%;
+      background-color: #ffffff;
+      padding: 15px;
+      border-left: 2px solid #cccccc;
+      border-right: 2px solid #cccccc;
+    }
+
+    /* Kolom 3 - Konten Tambahan */
+    .col-extra {
+      width: 20%;
+      background-color: #f5f5dc;
+      padding: 15px;
+      border-right: 2px solid #cccccc;
+    }
+
+    /* Kolom 4 - Sidebar Kanan */
+    .col-sidebar-right {
+      width: 20%;
+      background-color: #e0e0e0;
+      padding: 15px;
+    }
+
+    /* BARIS 4 - FOOTER */
+    .footer {
+      background-color: #333333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- BARIS 1: HEADER -->
+  <div class="header">
+    <h1>Header</h1>
+    <p>Ini adalah bagian Header halaman web</p>
+  </div>
+
+  <!-- BARIS 2: NAVBAR -->
+  <div class="navbar">
+    <a href="#">Beranda</a>
+    <a href="#">Profil</a>
+    <a href="#">Akademik</a>
+    <a href="#">Mahasiswa</a>
+    <a href="#">Kontak</a>
+  </div>
+
+  <!-- BARIS 3: 4 KOLOM -->
+  <div class="row">
+
+    <!-- KOLOM 1 -->
+    <div class="col-sidebar-left">
+      <h3>Sidebar Kiri</h3>
+      <p>Kolom 1</p>
+      <p>Menu navigasi kiri</p>
+      <ul>
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+      </ul>
+    </div>
+
+    <!-- KOLOM 2 -->
+    <div class="col-main">
+      <h3>Konten Utama</h3>
+      <p>Kolom 2</p>
+      <p>Ini adalah bagian konten utama halaman web. Berisi informasi dan artikel utama yang ingin ditampilkan kepada pengunjung.</p>
+      <br>
+      <p>Layout ini merupakan modifikasi dari template W3Schools. Jumlah kolom diubah dari 3 menjadi <b>4 kolom</b>, dan jumlah baris diubah dari 2 menjadi <b>3 baris</b> (Header + Navbar + Konten + Footer).</p>
+    </div>
+
+    <!-- KOLOM 3 -->
+    <div class="col-extra">
+      <h3>Konten Tambahan</h3>
+      <p>Kolom 3</p>
+      <p>Berisi informasi tambahan, widget, atau iklan pendukung konten utama.</p>
+    </div>
+
+    <!-- KOLOM 4 -->
+    <div class="col-sidebar-right">
+      <h3>Sidebar Kanan</h3>
+      <p>Kolom 4</p>
+      <p>Menu atau info tambahan di sisi kanan halaman.</p>
+      <ul>
+        <li>Info 1</li>
+        <li>Info 2</li>
+        <li>Info 3</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BARIS 4: FOOTER -->
+  <div class="footer">
+    <p>Footer</p>
+    <p>Ini adalah bagian Footer &mdash; Pemrograman Web &mdash; Teknik Informatika UAD</p>
+  </div>
+
+</body>
+</html>
